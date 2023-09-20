@@ -1,0 +1,17 @@
+mutation UploadCurriculumVitae(
+  $file: Upload
+  $title: String
+){
+  UpdatedUserCV(
+    document: {
+      file: $file
+      title: $title
+    }
+  ){
+    stepFour{
+      _id
+      title
+      uploadedFile
+    }
+  }
+}

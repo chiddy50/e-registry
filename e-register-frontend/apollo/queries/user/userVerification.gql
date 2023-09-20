@@ -1,0 +1,34 @@
+
+query UserVerification {
+  userVerification {
+    stepOne{
+      nameOfCompany
+      location
+      address
+      rcNumber
+      dateOfIncorporation
+      tin
+      phoneNumber
+    }
+    stepTwo{
+      certificateOfIncorporation
+      certificateOfTaxClearance
+      applicationLetter
+    }
+    stepThree{
+      letterOfCredibilityFromBanks
+      evidenceOfPayment
+      collaborationCertificateWithForeignPartners
+    }
+    stepFour{
+      _id
+      uploadedFile
+      title
+    }
+    stepFive{
+      _id
+      uploadedFile
+      title
+    }
+  }
+}

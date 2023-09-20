@@ -1,0 +1,36 @@
+query GetCompany {
+  getUser {
+    _id
+    nameOfCompany
+    location
+    address
+    rcNumber
+    dateOfIncorporation
+    tin
+    phoneNumber
+    isCertificateOfIncorporation
+    isCertificateOfTaxClearance
+    isApplicationLetter
+    isEvidenceOfPayment
+    isLetterOfCredibilityFromBanks
+    isCollaborationCertificateWithForeignPartners
+    isCurriculumVitae
+    isBoardOfDirectorsInput
+    # certificateOfIncorporation
+    # certificateOfTaxClearance
+    # applicationLetter
+    # evidenceOfPayment
+    # letterOfCredibilityFromBanks
+    # collaborationCertificateWithForeignPartners
+    # curriculumVitae{
+    #   file
+    #   title
+    # }
+    # boardOfDirectors{
+    #   file
+    #   title
+    # }
+    profilePic
+  }
+}
+

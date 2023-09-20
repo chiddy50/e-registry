@@ -1,0 +1,31 @@
+ query GetAccreditationsByAdmin($size: Int, $userId: String) {
+    getAccreditationsByAdmin(accreditationQuery: {
+      size: $size,
+      userId: $userId,
+    }) {
+      _id
+      categoryId
+      subcategoryId
+      userId
+      accredited
+      isDeleted
+      status
+      dateAccredited
+      dateCreated
+      expiryDate
+      proofOfPayment
+      supportingDocument
+      category {
+        _id
+        name
+      }
+      subcategory {
+        name
+      }
+      user {
+        nameOfCompany
+        _id
+      }
+    }
+  }
+

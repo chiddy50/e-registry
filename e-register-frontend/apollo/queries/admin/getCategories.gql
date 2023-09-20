@@ -1,0 +1,14 @@
+query GetCategories {
+  findAllCategories {
+    _id
+    name
+    isDeleted
+    subcategories{
+      _id
+      name
+      categoryId
+      isDeleted
+    }
+  }
+}
+
